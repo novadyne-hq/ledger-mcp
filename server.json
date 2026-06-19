@@ -1,0 +1,30 @@
+{
+  "$schema": "https://registry.modelcontextprotocol.io/schemas/server.json",
+  "name": "io.github.novadyne-hq/ledger-mcp",
+  "description": "Double-entry accounting MCP server for AI agents — create accounts, post balanced journal entries, and pull trial-balance / general-ledger reports. 11 tools. Paid per call via x402 micropayments (USDC on Base); health + discovery are free.",
+  "repository": "https://github.com/novadyne-hq/ledger-mcp",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "ledger-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LEDGER_X402_PRIVATE_KEY",
+          "description": "Private key of a funded Base wallet (USDC) used to pay the x402 micropayment on each call. Optional — health and discovery work without it.",
+          "isSecret": true,
+          "isRequired": false
+        },
+        {
+          "name": "LEDGER_API_URL",
+          "description": "Override the Ledger API base URL (default https://ledger-api.novadyne.ai).",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

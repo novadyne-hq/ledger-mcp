@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ledger-mcp"
+version = "0.1.0"
+description = "Double-entry accounting MCP server for AI agents — create accounts, post balanced journal entries, pull trial-balance / general-ledger reports. Paid per call via x402 micropayments (USDC on Base)."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{ name = "Novadyne", email = "support@novadyne.ai" }]
+keywords = ["mcp", "mcp-server", "accounting", "ledger", "double-entry", "bookkeeping", "finance", "x402", "micropayments", "agent-payments", "claude-code", "base", "usdc"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Framework :: FastAPI",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+dependencies = ["mcp>=1.0", "eth-account>=0.11"]
+
+[project.scripts]
+ledger-mcp = "ledger_mcp:main"
+
+[project.urls]
+Homepage = "https://ledger.novadyne.ai"
+Repository = "https://github.com/novadyne-hq/ledger-mcp"
+Issues = "https://github.com/novadyne-hq/ledger-mcp/issues"
