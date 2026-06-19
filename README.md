@@ -1,3 +1,5 @@
+<!-- mcp-name: io.github.novadyne-hq/ledger-mcp -->
+
 # Ledger MCP
 
 **Double-entry accounting for AI agents.** An MCP server over the

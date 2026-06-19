@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ledger-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Double-entry accounting MCP server for AI agents — create accounts, post balanced journal entries, pull trial-balance / general-ledger reports. Paid per call via x402 micropayments (USDC on Base)."
 readme = "README.md"
 license = {text = "MIT"}
