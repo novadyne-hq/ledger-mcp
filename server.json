@@ -1,7 +1,7 @@
 {
   "$schema": "https://registry.modelcontextprotocol.io/schemas/server.json",
   "name": "io.github.novadyne-hq/ledger-mcp",
-  "description": "Double-entry accounting MCP server for AI agents \u2014 create accounts, post balanced journal entries, and pull trial-balance / general-ledger reports. 11 tools. Paid per call via x402 micropayments (USDC on Base); health + discovery are free.",
+  "description": "Double-entry accounting MCP for AI agents \u2014 paid per call via x402 (USDC on Base). 11 tools.",
   "repository": {
     "url": "https://github.com/novadyne-hq/ledger-mcp",
     "source": "github"
