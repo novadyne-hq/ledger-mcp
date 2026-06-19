@@ -1,5 +1,5 @@
 {
-  "$schema": "https://registry.modelcontextprotocol.io/schemas/server.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.novadyne-hq/ledger-mcp",
   "description": "Double-entry accounting MCP for AI agents \u2014 paid per call via x402 (USDC on Base). 11 tools.",
   "repository": {
