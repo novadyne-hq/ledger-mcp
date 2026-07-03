@@ -1,24 +1,24 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.novadyne-hq/ledger-mcp",
-  "description": "Double-entry accounting MCP for AI agents \u2014 paid per call via x402 (USDC on Base). 11 tools.",
+  "description": "Double-entry bookkeeping API that natively accepts crypto micropayments (x402, USDC on Base).",
   "repository": {
     "url": "https://github.com/novadyne-hq/ledger-mcp",
     "source": "github"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "ledger-mcp",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [
         {
           "name": "LEDGER_X402_PRIVATE_KEY",
-          "description": "Private key of a funded Base wallet (USDC) used to pay the x402 micropayment on each call. Optional \u2014 health and discovery work without it.",
+          "description": "Private key of a funded Base wallet (USDC) used to pay the x402 micropayment on each call. Optional — health and discovery work without it.",
           "isSecret": true,
           "isRequired": false
         },

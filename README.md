@@ -2,15 +2,23 @@
 
 # Ledger MCP
 
-**Double-entry accounting for AI agents.** An MCP server over the
-[Ledger API](https://ledger.novadyne.ai) — create a chart of accounts, post
-balanced journal entries, and pull trial-balance / general-ledger reports,
-all from inside your agent.
+**Ledger is a double-entry bookkeeping API that natively accepts crypto
+micropayments** — and this is its MCP server. Create a chart of accounts, post
+balanced journal entries, and pull trial-balance / general-ledger reports from
+inside your agent, over the [Ledger API](https://ledger.novadyne.ai).
 
-Ledger is **agent-native**: it's paid **per call via [x402](https://x402.org)
-micropayments** (USDC on the Base network), so an agent can use real
-double-entry bookkeeping without an account, API key, or subscription — it just
-pays a fraction of a cent per call from its own wallet.
+What makes it agent-native:
+
+- **Pays per call via [x402](https://x402.org)** — ~$0.002 per read, ~$0.01 per
+  write, in USDC on the Base network. No account, no API key, no subscription:
+  **zero signup** — the agent pays a fraction of a cent per call from its own
+  wallet.
+- **Real double-entry accounting** — every transaction is a balanced journal
+  entry enforced by a **sum-to-zero database invariant**; unbalanced entries are
+  rejected before anything is spent.
+- **The ledger itself is x402-payable** — not a dashboard that accounts *for*
+  x402 traffic, but a bookkeeping backend an autonomous agent can discover, pay,
+  and use end-to-end with no human in the loop.
 
 ## Install
 

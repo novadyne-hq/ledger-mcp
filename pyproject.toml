@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ledger-mcp"
-version = "0.1.1"
-description = "Double-entry accounting MCP server for AI agents — create accounts, post balanced journal entries, pull trial-balance / general-ledger reports. Paid per call via x402 micropayments (USDC on Base)."
+version = "0.1.2"
+description = "MCP server for Ledger — a double-entry bookkeeping API that natively accepts crypto micropayments. Zero signup: pays per call via x402 (~$0.002/read, ~$0.01/write, USDC on Base). Balanced journal entries, trial balance, general ledger."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
